@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿#if !MY45
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Text;
 
 namespace Samples.Utils.Logging
 {
+
     public class ExampleLoggerProvider : ILoggerProvider
     {
         private readonly ConcurrentDictionary<string, ExampleLogger> _loggers = new ConcurrentDictionary<string, ExampleLogger>();
@@ -37,3 +39,4 @@ namespace Samples.Utils.Logging
         }
     }
 }
+#endif

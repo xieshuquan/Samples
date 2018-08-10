@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿#if !MY45
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Samples.Utils.Logging;
@@ -8,6 +9,7 @@ using System.Text;
 
 namespace Microsoft.Extensions.Logging
 {
+
     public static class ExampleLoggerExtension
     {
         public static ILoggingBuilder AddExample(this ILoggingBuilder builder)
@@ -28,4 +30,6 @@ namespace Microsoft.Extensions.Logging
             return factory;
         }
     }
+
 }
+#endif

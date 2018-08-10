@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿#if !MY45
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions.Internal;
 using System;
 using System.Collections.Generic;
@@ -53,4 +54,6 @@ namespace Samples.Utils.Logging
         }
 
     }
+
 }
+#endif
