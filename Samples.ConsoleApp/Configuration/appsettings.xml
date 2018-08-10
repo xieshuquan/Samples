@@ -1,0 +1,17 @@
+﻿<Root>
+  <People>
+    <Name>小红</Name>
+    <Age>1000</Age>
+  </People>
+  <Child>
+    <Name>B</Name>
+    <Age>1</Age>
+  </Child>
+  <Array>
+    <Names>
+        <Item>
+          <Name>F</Name>
+        </Item>
+    </Names>
+  </Array>
+</Root>
